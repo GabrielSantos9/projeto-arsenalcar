@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.conteudo-principal {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+
+.conteudo-principal::before {
+  width: 7.5rem;
+  height: 1.25rem;
+  transform: rotate(-45deg);
+  flex-shrink: 0;
+  background-color: rebeccapurple;
+}
+
+.conteudo {
+  width: 73.3125rem;
+  height: 32.6875rem;
+  border-radius: 0.9375rem;
+  background: #292929;
+  display: grid;
+  grid-template-columns: 2fr 470px;
+  grid-template-areas: "infosorteio slidesorteio";
+}
+
+.info-sorteio {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  flex-direction: column;
+  grid-area: infosorteio;
+}
+
+.info-sorteio > .titulo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 0.06125rem;
+}
+
+.info-sorteio > .subtitulo {
+  color: #d40000;
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+
+.info-sorteio > .interacao > .numero-minimo,
+.numero-maximo {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.info-sorteio > .interacao > .numero-minimo > .minimo,
+.maximo {
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.01rem;
+}
+
+.barra-preenchimento {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: 0.0125rem;
+  background: #353535;
+  border-radius: 0.9375rem;
+  height: 3.0625rem;
+  width: 32.9375rem;
+  transition: 0.3s ease-in-out;
+}
+
+.barra-preenchimento:focus {
+  outline: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #d40000;
+  background: transparent;
+}
+
+.button {
+  margin-top: 35px;
+  color: #fff;
+  font-weight: 600;
+  width: 32.9375rem;
+  height: 3.0625rem;
+  text-align: center;
+  font-size: 1.25rem;
+  background: #d40000;
+  letter-spacing: 0.0125rem;
+  border-radius: 0.9375rem;
+}
+
+.area-sorteio {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-area: slidesorteio;
+}
+
+.area-sorteio > .conteudo-sorteio {
+  width: 23rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column-reverse;
+  background: #d40000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.9375rem;
+}
+
+.resultado-sorteio {
+  font-size: 8rem;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  background: linear-gradient(180deg, #fff 46.35%, rgba(249, 249, 249, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  position: absolute;
+}
+
+.numero-sorteado {
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.94rem;
+  background: linear-gradient(
+    180deg,
+    #dedede 56.25%,
+    rgba(222, 222, 222, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 360px;
+  position: relative;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="detalhe.svg" type="image/x-icon">
+    <title>ARSENALCAR - SORTEIO</title>
+    <link rel="stylesheet" href="arsenalcar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article class="conteudo-principal">
+      <section class="conteudo">
+        <div class="info-sorteio">
+          <h1 class="titulo">SORTEIO DE NÚMEROS</h1>
+          <h2 class="subtitulo">ARSENAL CAR</h2>
+          <div class="interacao">
+            <div class="numero-minimo">
+              <label class="minimo">Número mínimo:</label>
+              <input class="barra-preenchimento" value="1" id="numero-min" /> 
+            </div>
+            <div class="numero-maximo">
+              <label class="maximo">Número máximo:</label>
+              <input class="barra-preenchimento" value="100" id="numero-max" />
+            </div>
+              <input class="button" type="button" value="SORTEAR" onclick="sortear()"/>
+          </div>
+        </div>
+        <div class="area-sorteio">
+          <div class="conteudo-sorteio">
+            <span class="resultado-sorteio"></span>
+            <span class="numero-sorteado">NÚMERO SORTEADO</span>
+          </div>
+        </div>
+      </section>
+    </article>
+    <script src="arsenalcar.js"></script>
+  </body>
+</html>
