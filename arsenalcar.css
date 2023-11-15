@@ -17,14 +17,6 @@
   display: grid;
 }
 
-.conteudo-principal::before {
-  width: 7.5rem;
-  height: 1.25rem;
-  transform: rotate(-45deg);
-  flex-shrink: 0;
-  background-color: rebeccapurple;
-}
-
 .conteudo {
   width: 73.3125rem;
   height: 32.6875rem;
@@ -152,3 +144,21 @@
   margin-top: 360px;
   position: relative;
 }
+
+/* .historico-valores {
+  width: 500px;
+  height: 300px;
+  background-color: #292929;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin: 0 auto;
+}
+
+.titulo-historico {
+  flex-direction: column;
+}
+
+.resultado-valores {
+
+} */
