@@ -143,9 +143,10 @@
   -webkit-text-fill-color: transparent;
   margin-top: 360px;
   position: relative;
+  z-index: 1;
 }
 
-/* .historico-valores {
+ .historico-valores {
   width: 500px;
   height: 300px;
   background-color: #292929;
@@ -153,6 +154,8 @@
   flex-direction: row;
   margin-top: 100px;
   margin: 0 auto;
+  position: absolute;
+  z-index: 99;
 }
 
 .titulo-historico {
@@ -161,4 +164,4 @@
 
 .resultado-valores {
 
-} */
+} 
