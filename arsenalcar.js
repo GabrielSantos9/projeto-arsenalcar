@@ -9,11 +9,15 @@ function sortear() {
   elementResultado.classList.add("resultado-valores");
   elementResultado.innerText = numeroSorteado;
 
-  const elementResultadoValores = document.querySelector(".resultado-valores");
-  elementResultadoValores.append(elementResultado);
+
+
+  // const elementResultadoValores = document.querySelector(".resultado-valores");
+  // elementResultadoValores.append(a);
 }
 
 function historico() {
   const botaoHistorico = document.querySelector('.numero-sorteado');
   botaoHistorico.classList.add("historico-valores");
+
+
 }

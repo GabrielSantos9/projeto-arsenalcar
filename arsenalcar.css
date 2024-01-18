@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  /* font-family: "Roboto", sans-serif; */
   font-family: "Poppins", sans-serif;
   margin: 0;
   border: 0;
@@ -19,18 +18,17 @@
 
 .conteudo {
   width: 73.3125rem;
-  height: 32.6875rem;
   border-radius: 0.9375rem;
   background: #292929;
   display: grid;
   grid-template-columns: 2fr 470px;
   grid-template-areas: "infosorteio slidesorteio"
-                        "historico-valores historico-valores";
+                        "historico historico";
+  padding: 70px 0px;
 }
 
 .info-sorteio {
   display: flex;
-  margin-top: 50px;
   align-items: center;
   flex-direction: column;
   grid-area: infosorteio;
@@ -76,7 +74,6 @@
   border-radius: 0.9375rem;
   height: 3.0625rem;
   width: 32.9375rem;
-  transition: 0.3s ease-in-out;
 }
 
 .barra-preenchimento:focus {
@@ -101,7 +98,6 @@
 
 .area-sorteio {
   display: grid;
-  align-items: center;
   justify-content: center;
   grid-area: slidesorteio;
 }
@@ -147,8 +143,12 @@
   z-index: 1;
 }
 
-.historico-valores {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.historico {
+  margin-top: 70px;
+  text-align: center;
+  grid-area: historico;
+}
+
+.tituloHistorico {
+  color: white;
 }
