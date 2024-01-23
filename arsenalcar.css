@@ -13,25 +13,26 @@
   background-color: #0f0f0f;
   align-items: center;
   justify-content: center;
-  display: grid;
+  display: flex;
+  
 }
 
 .conteudo {
-  width: 73.3125rem;
+  /* width: 73.3125rem;*/
   border-radius: 0.9375rem;
   background: #292929;
-  display: grid;
-  grid-template-columns: 2fr 470px;
+  display: flex;
+  /* grid-template-columns: 2fr 470px;
   grid-template-areas: "infosorteio slidesorteio"
-                        "historico historico";
-  padding: 70px 0px;
+                        "historico historico"; */
+  padding: 50px;
+  flex-direction: column;
 }
 
 .info-sorteio {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  grid-area: infosorteio;
+  padding-right: 40px;
 }
 
 .info-sorteio > .titulo {
@@ -97,9 +98,9 @@
 }
 
 .area-sorteio {
-  display: grid;
+  display: flex;
   justify-content: center;
-  grid-area: slidesorteio;
+  align-items: center;
 }
 
 .area-sorteio > .conteudo-sorteio {
@@ -144,11 +145,21 @@
 }
 
 .historico {
-  margin-top: 70px;
   text-align: center;
-  grid-area: historico;
+  display: flex;
+  margin-top: 30px;
+  /* flex-direction: row; */
 }
 
 .tituloHistorico {
   color: white;
+}
+
+.historico::before {
+  content: "";
+  display: inline-block;
+  width: 62.75rem;
+  height: 2.3px;
+  border-radius: 0.9375rem;
+  background-color: #353535;
 }
