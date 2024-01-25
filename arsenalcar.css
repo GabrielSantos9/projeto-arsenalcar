@@ -18,10 +18,13 @@
 }
 
 .conteudo {
+  width: 935px;
   border-radius: 0.9375rem;
   background: #292929;
-  display: flex;
   padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .info-sorteio {
@@ -150,11 +153,11 @@
   color: white;
 }
 
-/* .historico::before {
+.historico::before {
   content: "";
   display: inline-block;
-  width: 62.75rem;
+  width: 58.60rem;
   height: 2.3px;
   border-radius: 0.9375rem;
   background-color: #353535;
-} */
+}
