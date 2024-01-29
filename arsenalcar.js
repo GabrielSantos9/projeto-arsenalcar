@@ -11,8 +11,8 @@ function sortear() {
 
 
 
-  // const elementResultadoValores = document.querySelector(".resultado-valores");
-  // elementResultadoValores.append(a);
+  const elementResultadoValores = document.querySelector(".resultado-valores");
+  elementResultadoValores.append(a);
 }
 
 function historico() {
