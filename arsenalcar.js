@@ -6,18 +6,19 @@ function sortear() {
   document.querySelector(".resultado-sorteio").innerHTML = numeroSorteado;
 
   const elementResultado = document.createElement("div");
-  elementResultado.classList.add("resultado-valores");
+  elementResultado.classList.add("resultado-valor");
   elementResultado.innerText = numeroSorteado;
 
 
 
-  const elementResultadoValores = document.querySelector(".resultado-valores");
-  elementResultadoValores.append(a);
+  const elementResultadoValores = document.querySelector(".conteudo-historico");
+  elementResultadoValores.append(elementResultado);
 }
 
-function historico() {
-  const botaoHistorico = document.querySelector('.numero-sorteado');
-  botaoHistorico.classList.add("historico-valores");
-
-
+function mostrarHistorico() {
+  // const elemento = document.querySelector("numero-sorteado");
+  const container = document.getElementById("historicoTeste")
+  if (container.style.display === "none") {
+    container.style.display = "flex";
+  } 
 }
