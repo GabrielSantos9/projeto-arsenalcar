@@ -16,9 +16,12 @@ function sortear() {
 }
 
 function mostrarHistorico() {
-  // const elemento = document.querySelector("numero-sorteado");
-  const container = document.getElementById("historicoTeste")
-  if (container.style.display === "none") {
-    container.style.display = "flex";
-  } 
-}
+  var botao = document.querySelector('numero-sorteado');
+  var container = document.querySelector('.historico');
+
+  if(container.style.display === 'none') {
+    container.style.display = 'flex';
+  } else {
+    container.style.display = 'none';
+  }
+};
