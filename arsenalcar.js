@@ -1,23 +1,30 @@
+let numerosSorteados = [];
+
 function sortear() {
-  const numeroMin = Number(document.querySelector("#numero-min").value);
-  const numeroMax = Number(document.querySelector("#numero-max").value);
-  const numeroSorteado =
-    Math.floor(Math.random() * (numeroMax - numeroMin + 1)) + numeroMin;
-  document.querySelector(".resultado-sorteio").innerHTML = numeroSorteado;
+    const numeroMin = Number(document.querySelector("#numero-min").value);
+    const numeroMax = Number(document.querySelector("#numero-max").value);
 
-  const elementResultado = document.createElement("div");
-  elementResultado.classList.add("resultado-valor");
-  elementResultado.innerText = numeroSorteado;
+    let numeroSorteado;
 
+    do {
+        numeroSorteado = Math.floor(Math.random() * (numeroMax - numeroMin + 1)) + numeroMin;
+    } while (numerosSorteados.includes(numeroSorteado));
 
+    numerosSorteados.push(numeroSorteado);
 
-  const elementResultadoValores = document.querySelector(".conteudo-historico");
-  elementResultadoValores.append(elementResultado);
+    document.querySelector(".resultado-sorteio").innerHTML = numeroSorteado;
+
+    const elementResultado = document.createElement("div");
+    elementResultado.classList.add("resultado-valor");
+    elementResultado.innerText = numeroSorteado;
+
+    const elementResultadoValores = document.querySelector(".conteudo-historico");
+    elementResultadoValores.appendChild(elementResultado);
 }
 
+
 function mostrarHistorico() {
-  var botao = document.querySelector('numero-sorteado');
-  var container = document.querySelector('.historico');
+  const container = document.querySelector('.historico');
 
   if(container.style.display === 'none') {
     container.style.display = 'flex';
@@ -25,3 +32,8 @@ function mostrarHistorico() {
     container.style.display = 'none';
   }
 };
+
+
+function telaCheia() {
+ 
+}
