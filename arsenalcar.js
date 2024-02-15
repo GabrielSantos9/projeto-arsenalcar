@@ -34,6 +34,4 @@ function mostrarHistorico() {
 };
 
 
-function telaCheia() {
- 
-}
+
