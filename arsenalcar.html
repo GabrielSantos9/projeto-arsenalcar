@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="detalhe.svg" type="image/x-icon">
-    <title>ARSENALCAR - SORTEIO</title>
+    <title>Nome - SORTEIO</title>
     <link rel="stylesheet" href="arsenalcar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
       <article class="conteudo">
         <div class="info-sorteio">
           <h1 class="titulo">SORTEIO DE NÚMEROS</h1>
-          <h2 class="subtitulo" onclick="telaCheia()">NOMEEEEEE</h2>
+          <h2 class="subtitulo">Arsenal Car</h2>
           <div class="interacao">
             <div class="numero-minimo">
               <label class="minimo">Número mínimo:</label>
@@ -44,6 +44,15 @@
           </div>
         </div>
       </section>
+      <div id="modal-sorteio" class="modal-container">
+          <div class="area-sorteio flex-direction">
+            <div class="conteudo-sorteio">
+              <span class="resultado-sorteio"></span>
+              <a class="numero-sorteado" onclick="mostrarHistorico()">NÚMERO SORTEADO</a>
+            </div>
+            <input class="button" type="button" value="SORTEAR" onclick="sortear()"/>
+          </div>
+      </div>
     </main>
     <script src="arsenalcar.js"></script>
   </body>
