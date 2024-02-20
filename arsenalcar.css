@@ -209,7 +209,7 @@
 @keyframes modal {
   from {
     opacity: 0;
-    transform: translate3d(0, -60px, 0);
+    transform: translate3d(0, 60px, 0);
   }
   to {
     opacity: 1;
@@ -218,5 +218,5 @@
 }
 
 .mostrar .modal {
-  animation: modal .50s;
+  animation: modal .3s;
 }

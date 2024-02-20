@@ -1,49 +1,47 @@
 let numerosSorteados = [];
 
 function sortear() {
-    const numeroMin = Number(document.querySelector("#numero-min").value);
-    const numeroMax = Number(document.querySelector("#numero-max").value);
+  const numeroMin = Number(document.querySelector("#numero-min").value);
+  const numeroMax = Number(document.querySelector("#numero-max").value);
 
-    let numeroSorteado;
+  let numeroSorteado;
 
-    do {
-        numeroSorteado = Math.floor(Math.random() * (numeroMax - numeroMin + 1)) + numeroMin;
-    } while (numerosSorteados.includes(numeroSorteado));
+  do {
+    numeroSorteado =
+      Math.floor(Math.random() * (numeroMax - numeroMin + 1)) + numeroMin;
+  } while (numerosSorteados.includes(numeroSorteado));
 
-    numerosSorteados.push(numeroSorteado);
+  numerosSorteados.push(numeroSorteado);
 
-    document.querySelector(".resultado-sorteio").innerHTML = numeroSorteado;
+  document.querySelector(".resultado-sorteio").innerHTML = numeroSorteado;
 
-    const elementResultado = document.createElement("div");
-    elementResultado.classList.add("resultado-valor");
-    elementResultado.innerText = numeroSorteado;
+  const elementResultado = document.createElement("div");
+  elementResultado.classList.add("resultado-valor");
+  elementResultado.innerText = numeroSorteado;
 
-    const elementResultadoValores = document.querySelector(".conteudo-historico");
-    elementResultadoValores.appendChild(elementResultado);
+  const elementResultadoValores = document.querySelector(".conteudo-historico");
+  elementResultadoValores.appendChild(elementResultado);
 }
 
-
 function mostrarHistorico() {
-  const container = document.querySelector('.historico');
+  const container = document.querySelector(".historico");
 
-  if(container.style.display === 'none') {
-    container.style.display = 'flex';
+  if (container.style.display === "none") {
+    container.style.display = "flex";
   } else {
-    container.style.display = 'none';
+    container.style.display = "none";
   }
-};
+}
 
 function iniciarModal(modalID) {
   const modal = document.getElementById(modalID);
-  if (modal) {
-    modal.classList.add('mostrar');
-    modal.addEventListener('click', (e) =>{
-      if (e.target.id == modalID || e.target.className == 'fechar') {
-        modal.classList.remove('mostrar');
-      }
-    });
+  modal.classList.add('mostrar');
+  modal.addEventListener('click', (e) => {
+  if (e.target.id == modalID || e.target.className == 'fechar') {
+    modal.classList.remove('mostrar');
   }
-  const logo = document.querySelector('.subtitulo');
-  subtitulo.addEventListener('click', () => iniciarModal('modal-sorteio'));
+  });
 }
 
+const subtitulo = document.querySelector('.subtitulo');
+subtitulo.addEventListener('click', () => iniciarModal('modal-sorteio'));
