@@ -43,5 +43,5 @@ function iniciarModal(modalID) {
   });
 }
 
-const subtitulo = document.querySelector('.subtitulo');
-subtitulo.addEventListener('click', () => iniciarModal('modal-sorteio'));
+const button = document.querySelector('.button');
+button.addEventListener('click', () => iniciarModal('modal-sorteio'));

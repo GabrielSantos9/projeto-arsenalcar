@@ -17,7 +17,6 @@
 }
 
 .conteudo {
-  width: 936px;
   border-radius: 0.9375rem;
   background: #292929;
   padding: 50px;
@@ -29,7 +28,6 @@
 .info-sorteio {
   display: flex;
   align-items: center;
-  padding-right: 40px;
   flex-direction: column;
   justify-content: center;
 }
@@ -209,7 +207,7 @@
 @keyframes modal {
   from {
     opacity: 0;
-    transform: translate3d(0, 60px, 0);
+    transform: translate3d(0, -60px, 0);
   }
   to {
     opacity: 1;
@@ -217,6 +215,19 @@
   }
 }
 
-.mostrar .modal {
+.mostrar .conteudo-sorteio {
   animation: modal .3s;
+}
+
+.button-sorteio {
+  margin-top: 30px;
+  color: #fff;
+  font-weight: 600;
+  width: 8rem;
+  height: 3.0625rem;
+  text-align: center;
+  font-size: 1.25rem;
+  background: linear-gradient(180deg, #D40000 0%, #C50303 50.5%, #7D1414 100%);
+  letter-spacing: 0.0125rem;
+  border-radius: 0.9375rem;
 }
