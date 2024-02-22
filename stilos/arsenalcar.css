@@ -1,6 +1,6 @@
 @import "/projeto-arsenalcar/stilos/configGeral.css";
 @import "/projeto-arsenalcar/stilos/resposivo.css";
-
+@import "/projeto-arsenalcar/stilos/animacoes.css";
 
 .conteudo-principal {
   width: 100vw;
@@ -200,17 +200,6 @@
 
 .modal-container.mostrar {
   display: flex;
-}
-
-@keyframes modal {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -60px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
 }
 
 .mostrar .conteudo-sorteio {

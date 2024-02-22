@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@import "/projeto-arsenalcar/stilos/arsenalcar.css";
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -8,7 +10,7 @@
 }
 
 :root {
-  --corLeitura:#fff;
+  --corLeitura: #fff;
   --vermelhoPrincipal: #d40000;
   --barraPreenchimento: #353535;
   --filtroModal: rgba(0,0,0,.97);
