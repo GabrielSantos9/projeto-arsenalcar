@@ -1,7 +1,0 @@
-@import "/projeto-arsenalcar/stilos/arsenalcar.css";
-
-@media (max-width: 645px) {
-  .barra-preenchimento, .button {
-    width: 25rem;
-  }
-}

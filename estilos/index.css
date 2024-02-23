@@ -1,6 +1,6 @@
-@import "/projeto-arsenalcar/stilos/configGeral.css";
-@import "/projeto-arsenalcar/stilos/resposivo.css";
-@import "/projeto-arsenalcar/stilos/animacoes.css";
+@import "./configGeral.css";
+@import "./resposivo.css";
+@import "./animacoes.css";
 
 .conteudo-principal {
   width: 100vw;
