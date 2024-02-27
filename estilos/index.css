@@ -14,12 +14,12 @@
 .conteudo {
   border-radius: 0.9375rem;
   background: var(--fundoConteudo);
-  padding: 50px;
+  padding: 50px 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   flex-direction: column;
-  max-width: 850px;
+  justify-content: center;
+  width: 628px;
 }
 
 .info-sorteio {
@@ -145,20 +145,24 @@
   flex-direction: column;
 }
 
+@media (min-width: 1900px) {
+  .area-sorteio {
+    position: fixed;
+  }
+
+  .historico {
+    margin-top: 850px;
+  }
+}
+
+
+
 .tituloHistorico {
   color: var(--corLeitura);
   display: flex;
   padding: 30px;
   justify-content: center;
-}
-
-.historico::before {
-  content: "";
-  display: flex;
-  height: 2.3px;
-  border-radius: 0.9375rem;
-  background-color: var(--barraPreenchimento);
-  transform: translate(0, -50%);
+  font-size: 1.25rem;
 }
 
 .conteudo-historico {
@@ -192,6 +196,7 @@
   display: none;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .flex-direction {

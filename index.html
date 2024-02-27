@@ -6,10 +6,15 @@
     <link rel="shortcut icon" href="detalhe.svg" type="image/x-icon">
     <title>Arsenal - SORTEIO</title>
     <link rel="stylesheet" href="estilos/index.css" />
+    <link rel="stylesheet" href="estilos/configGeral.css">
+    <link rel="stylesheet" href="estilos/resposivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
+    <style>
+    </style>
+
     <main class="conteudo-principal">
       <article class="conteudo">
         <div class="info-sorteio">
@@ -27,9 +32,9 @@
               <input class="button" type="button" value="SORTEAR"/>
           </div>
         </div>      
-        <div class="historico" id="historicoTeste">
+        <!-- <div class="historico" id="historicoTeste">
           <h1 class="tituloHistorico">- Números sorteados -</h1> 
-          <div class="conteudo-historico">
+          <div class="conteudo-historico"> -->
           </div>
         </div>
       </article>
@@ -41,6 +46,9 @@
             </div>
             <input class="button-sorteio" type="button" value="SORTEAR" onclick="sortear()"/>
           </div>
+          <div class="historico" id="historicoTeste">
+            <h1 class="tituloHistorico">Últimos números:</h1> 
+            <div class="conteudo-historico">
       </div>
     </main>
     <script src="arsenalcar.js"></script>
