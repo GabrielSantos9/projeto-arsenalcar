@@ -23,25 +23,15 @@ function sortear() {
   elementResultadoValores.appendChild(elementResultado);
 }
 
-function mostrarHistorico() {
-  const container = document.querySelector(".historico");
-
-  if (container.style.display === "none") {
-    container.style.display = "flex";
-  } else {
-    container.style.display = "none";
-  }
-}
-
 function iniciarModal(modalID) {
   const modal = document.getElementById(modalID);
-  modal.classList.add('mostrar');
-  modal.addEventListener('click', (e) => {
-  if (e.target.id == modalID || e.target.className == 'fechar') {
-    modal.classList.remove('mostrar');
-  }
+  modal.classList.add("mostrar");
+  modal.addEventListener("click", (e) => {
+    if (e.target.id == modalID || e.target.className == 'fechar') {
+      modal.classList.remove("mostrar");
+    }
   });
 }
 
-const button = document.querySelector('.button');
-button.addEventListener('click', () => iniciarModal('modal-sorteio'));
+const button = document.querySelector(".button");
+button.addEventListener("click", () => iniciarModal("modal-sorteio"));

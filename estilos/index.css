@@ -93,6 +93,7 @@
   background: var(--vermelhoDegrade);
   letter-spacing: 0.0125rem;
   border-radius: 0.9375rem;
+  cursor: pointer;
 }
 
 .area-sorteio {
@@ -139,10 +140,22 @@
 }
 
 .historico {
-  display: none;
+  display: flex;
   margin-top: 30px;
   justify-content: center;
   flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  background-color: #1b1b1b;
+  width: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5b5b5b;
+  border-radius: 5px;
 }
 
 @media (min-width: 1900px) {
@@ -155,6 +168,11 @@
   }
 }
 
+@media (max-height: 641px) {
+  .historico {
+    margin-top: 10px;
+  }
+}
 
 
 .tituloHistorico {
@@ -170,6 +188,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: auto;
 }
 
 .conteudo-historico > .resultado-valor {
@@ -199,6 +218,16 @@
   flex-direction: column;
 }
 
+.fechar {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, .97);
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+
 .flex-direction {
   flex-direction: column;
 }
@@ -222,4 +251,5 @@
   background: var(--vermelhoDegrade);
   letter-spacing: 0.0125rem;
   border-radius: 0.9375rem;
+  cursor: pointer;
 }
