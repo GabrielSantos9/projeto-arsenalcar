@@ -20,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   width: 628px;
+  transition: 0.15s ease-in-out;
 }
 
 .info-sorteio {
@@ -74,14 +75,6 @@
   width: 33rem;
 }
 
-.barra-preenchimento:focus {
-  outline: 0;
-  transition: 0.3s;
-  border-radius: 0;
-  border-bottom: 2px solid var(--vermelhoPrincipal);
-  background: transparent;
-}
-
 .button {
   margin-top: 30px;
   color: var(--corLeitura);
@@ -94,6 +87,7 @@
   letter-spacing: 0.0125rem;
   border-radius: 0.9375rem;
   cursor: pointer;
+  transition: 0.15s ease-in-out;
 }
 
 .area-sorteio {
@@ -226,6 +220,7 @@
   right: 10px;
   top: 5px;
   cursor: pointer;
+  background-image: url('/projeto-arsenalcar/close-circle-svgrepo-com\ 1.png');
 }
 
 .flex-direction {
@@ -252,4 +247,5 @@
   letter-spacing: 0.0125rem;
   border-radius: 0.9375rem;
   cursor: pointer;
+  transition: 0.15s ease-in-out;
 }

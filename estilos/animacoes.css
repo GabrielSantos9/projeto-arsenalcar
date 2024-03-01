@@ -1,10 +1,22 @@
 @keyframes modal {
   from {
     opacity: 0;
-    transform: translate3d(0, -60px, 0);
+    transform: translate3d(0, -90px, 0);
   }
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+.barra-preenchimento:focus {
+  outline: 0;
+  transition: 0.5s;
+  border-radius: 0;
+  border-bottom: 2px solid var(--vermelhoPrincipal);
+  background: transparent;
+}
+
+.button:hover, .button-sorteio:hover {
+  transform: scale(1.05);
 }

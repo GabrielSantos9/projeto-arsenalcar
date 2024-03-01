@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilos/index.css" />
     <link rel="stylesheet" href="estilos/configGeral.css">
     <link rel="stylesheet" href="estilos/resposivo.css">
+    <link rel="stylesheet" href="estilos/animacoes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
@@ -36,13 +37,13 @@
         </div>
       </article>
       <div id="modal-sorteio" class="modal-container">
-        <button class="fechar"><img src="close-circle-svgrepo-com 1.png" alt="Botao de fechar"></button>
+        <button class="fechar"></button>
           <div class="area-sorteio flex-direction">
             <div class="conteudo-sorteio">
               <span class="resultado-sorteio"></span>
               <a class="numero-sorteado">NÚMERO SORTEADO</a>
             </div>
-            <input class="button-sorteio" type="button" value="SORTEAR" onclick="sortear()"/>
+            <input class="button-sorteio" type="button" value="SORTEAR" onclick="sortear(), printClick()"/>
           </div>
           <div class="historico" id="historicoTeste">
             <h1 class="tituloHistorico">Últimos números:</h1> 
