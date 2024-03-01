@@ -10,7 +10,7 @@ function sortear() {
     numeroSorteado =
       Math.floor(Math.random() * (numeroMax - numeroMin + 1)) + numeroMin;
   } while (numerosSorteados.includes(numeroSorteado));
-
+  console.log(`numero`, numeroSorteado);
   numerosSorteados.push(numeroSorteado);
 
   document.querySelector(".resultado-sorteio").innerHTML = numeroSorteado;
@@ -25,14 +25,16 @@ function sortear() {
 let contador = 0;
 
 function printClick() {
-  const contadorElement = document.querySelector(".tituloHistorico");
   contador++;
-  console.log("Você clicou " + contador + " vezes.");
   contadorElement.innerHTML = `<p>Últimos números (${contador}):</p>`;
 }
+const contadorElement = document.querySelector(".tituloHistorico");
 
 const botaoSortear = document.querySelector(".button-sorteio");
-botaoSortear.addEventListener("click", printClick);
+botaoSortear.addEventListener("click", ()=> {
+  printClick();
+  sortear();
+});
 
 function iniciarModal(modalID) {
   const modal = document.getElementById(modalID);

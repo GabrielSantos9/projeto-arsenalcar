@@ -11,6 +11,21 @@
   display: flex;
 }
 
+button-sorteio-1 {
+  margin-top: 30px;
+  color: var(--corLeitura);
+  font-weight: 600;
+  width: 8rem;
+  height: 3.0625rem;
+  text-align: center;
+  font-size: 1.25rem;
+  background: var(--branco_degradePrimario);
+  letter-spacing: 0.0125rem;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
 .conteudo {
   border-radius: 0.9375rem;
   background: var(--fundoConteudo);
@@ -64,7 +79,7 @@
 }
 
 .barra-preenchimento {
-  color:var(--corLeitura);
+  color: var(--corLeitura);
   font-weight: 700;
   text-align: center;
   font-size: 1.25rem;
@@ -168,7 +183,6 @@
   }
 }
 
-
 .tituloHistorico {
   color: var(--corLeitura);
   display: flex;
@@ -216,11 +230,11 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: rgba(0, 0, 0, .97);
+  background-color: rgba(0, 0, 0, 0.97);
   right: 10px;
   top: 5px;
   cursor: pointer;
-  background-image: url('/projeto-arsenalcar/close-circle-svgrepo-com\ 1.png');
+  background-image: url("/projeto-arsenalcar/close-circle-svgrepo-com\ 1.png");
 }
 
 .flex-direction {
@@ -232,7 +246,7 @@
 }
 
 .mostrar .conteudo-sorteio {
-  animation: modal .3s;
+  animation: modal 0.3s;
 }
 
 .button-sorteio {
