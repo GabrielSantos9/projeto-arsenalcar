@@ -208,9 +208,7 @@ button-sorteio-1 {
 
   .modal-sorteio > .fechar {
     position: absolute;
-    background-image: url("/projeto-arsenalcar/close-circle-svgrepo-com\ 1-2.svg");
-    width: 12px;
-    height: 12px;
+    top: 430px;
   }
 
   .area-sorteio > .conteudo-sorteio {
