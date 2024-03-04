@@ -21,20 +21,8 @@ function sortear() {
 
   const elementResultadoValores = document.querySelector(".conteudo-historico");
   elementResultadoValores.appendChild(elementResultado);
+  
 }
-let contador = 0;
-
-function printClick() {
-  contador++;
-  contadorElement.innerHTML = `<p>Últimos números (${contador}):</p>`;
-}
-const contadorElement = document.querySelector(".tituloHistorico");
-
-const botaoSortear = document.querySelector(".button-sorteio");
-botaoSortear.addEventListener("click", ()=> {
-  printClick();
-  sortear();
-});
 
 function iniciarModal(modalID) {
   const modal = document.getElementById(modalID);
