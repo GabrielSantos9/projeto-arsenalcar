@@ -177,6 +177,48 @@ button-sorteio-1 {
   }
 }
 
+@media (max-width: 655px) {
+  .conteudo {
+    width: 460px;
+  }
+
+  .barra-preenchimento,
+  .button {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .conteudo {
+    width: 310px;
+  }
+
+  .info-sorteio > .titulo {
+    font-size: 20px;
+  }
+
+  .info-sorteio > .subtitulo {
+    font-size: 19px;
+  }
+
+  .barra-preenchimento,
+  .button {
+    width: 15rem;
+  }
+
+  .modal-sorteio > .fechar {
+    position: absolute;
+    background-image: url("/projeto-arsenalcar/close-circle-svgrepo-com\ 1-2.svg");
+    width: 12px;
+    height: 12px;
+  }
+
+  .area-sorteio > .conteudo-sorteio {
+    width: 20rem;
+  }
+
+}
+
 @media (max-height: 641px) {
   .historico {
     margin-top: 10px;
