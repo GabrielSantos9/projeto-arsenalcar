@@ -214,12 +214,28 @@ button-sorteio-1 {
   .area-sorteio > .conteudo-sorteio {
     width: 20rem;
   }
-
 }
 
 @media (max-height: 641px) {
   .historico {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .conteudo {
+    width: 280px;
+    padding: 30px 10px; 
+  }
+
+  .area-sorteio > .conteudo-sorteio {
+    width: 230px; 
+    height: 300px; 
+  }
+
+  .numero-sorteado {
+    margin-top: 280px;
+    font-size: 12px;
   }
 }
 
