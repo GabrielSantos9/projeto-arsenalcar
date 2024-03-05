@@ -179,7 +179,7 @@ button-sorteio-1 {
 
 @media (max-width: 655px) {
   .conteudo {
-    width: 460px;
+    width: 28.75rem;
   }
 
   .barra-preenchimento,
@@ -190,7 +190,7 @@ button-sorteio-1 {
 
 @media (max-width: 500px) {
   .conteudo {
-    width: 310px;
+    width: 19.375rem;
   }
 
   .info-sorteio > .titulo {
@@ -222,20 +222,24 @@ button-sorteio-1 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .conteudo {
-    width: 280px;
-    padding: 30px 10px; 
+    width: 17.5rem;
+    padding: 30px 10px;
   }
 
   .area-sorteio > .conteudo-sorteio {
-    width: 230px; 
-    height: 300px; 
+    width: 14.375rem;
+    height: 18.75rem;
+  }
+
+  .conteudo-sorteio > .resultado-sorteio {
+    font-size: 7rem;
   }
 
   .numero-sorteado {
     margin-top: 280px;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
