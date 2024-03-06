@@ -4,24 +4,35 @@ function sortear() {
   const numeroMin = Number(document.querySelector("#numero-min").value);
   const numeroMax = Number(document.querySelector("#numero-max").value);
 
-  let numeroSorteado;
+  // Verifica se o intervalo é válido
+  if (numeroMin >= 0 && numeroMax >= numeroMin) {
+    if (numerosSorteados <= numeroMax) {
 
-  do {
-    numeroSorteado =
-      Math.floor(Math.random() * (numeroMax - numeroMin + 1)) + numeroMin;
-  } while (numerosSorteados.includes(numeroSorteado));
-  console.log(`numero`, numeroSorteado);
-  numerosSorteados.push(numeroSorteado);
+    let numeroSorteado;
 
-  document.querySelector(".resultado-sorteio").innerHTML = numeroSorteado;
+    do {
+      numeroSorteado =
+        Math.floor(Math.random() * (numeroMax - numeroMin + 1)) + numeroMin;
+    } while (numerosSorteados.includes(numeroSorteado));
 
-  const elementResultado = document.createElement("div");
-  elementResultado.classList.add("resultado-valor");
-  elementResultado.innerText = numeroSorteado;
+    numerosSorteados.push(numeroSorteado);
 
-  const elementResultadoValores = document.querySelector(".conteudo-historico");
-  elementResultadoValores.appendChild(elementResultado);
-  
+    document.querySelector(".resultado-sorteio").innerHTML = numeroSorteado;
+
+    const elementResultado = document.createElement("div");
+    elementResultado.classList.add("resultado-valor");
+    elementResultado.innerText = numeroSorteado;
+
+    const elementResultadoValores = document.querySelector(
+      ".conteudo-historico"
+    );
+    elementResultadoValores.appendChild(elementResultado);
+  } else (numerosSorteado > numeroMax); {
+    alert("Todos os números foram sorteados");
+  }
+  } else {
+    alert("Por favor, insira números positivos.");
+  }
 }
 
 function iniciarModal(modalID) {
