@@ -62,7 +62,7 @@ button-sorteio-1 {
 }
 
 .info-sorteio > .interacao > .numero-minimo,
-.numero-maximo {
+.numero-maximo, .quantidade-numeros {
   display: flex;
   text-align: center;
   flex-direction: column;
