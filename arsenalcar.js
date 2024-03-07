@@ -4,10 +4,7 @@ function sortear() {
   const numeroMin = Number(document.querySelector("#numero-min").value);
   const numeroMax = Number(document.querySelector("#numero-max").value);
 
-  // Verifica se o intervalo é válido
   if (numeroMin >= 0 && numeroMax >= numeroMin) {
-    if (numerosSorteados <= numeroMax) {
-
     let numeroSorteado;
 
     do {
@@ -23,13 +20,15 @@ function sortear() {
     elementResultado.classList.add("resultado-valor");
     elementResultado.innerText = numeroSorteado;
 
-    const elementResultadoValores = document.querySelector(
-      ".conteudo-historico"
-    );
+    const elementResultadoValores = document.querySelector(".conteudo-historico");
     elementResultadoValores.appendChild(elementResultado);
-  } else (numerosSorteado > numeroMax); {
-    alert("Todos os números foram sorteados");
-  }
+    if (numerosSorteados.length === (numeroMax - numeroMin + 1)) {
+      alert("Todos os números possíveis já foram sorteados.");
+      return;
+    }
+    if (numeroMin === 0 || numeroMax === 0) {
+      alert("Por favor, preencha os campos do sorteio.");
+    }
   } else {
     alert("Por favor, insira números positivos.");
   }
