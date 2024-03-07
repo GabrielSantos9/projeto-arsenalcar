@@ -20,10 +20,15 @@ function sortear() {
     elementResultado.classList.add("resultado-valor");
     elementResultado.innerText = numeroSorteado;
 
-    const elementResultadoValores = document.querySelector(".conteudo-historico");
+    const elementResultadoValores = document.querySelector(
+      ".conteudo-historico"
+    );
     elementResultadoValores.appendChild(elementResultado);
-    if (numerosSorteados.length === (numeroMax - numeroMin + 1)) {
-      alert("Todos os números possíveis já foram sorteados.");
+    if (numerosSorteados.length === numeroMax - numeroMin + 1) {
+      reiniciarSorteio();
+      alert(
+        "Todos os números possíveis foram sorteados. O sorteio será reiniciado."
+      );
       return;
     }
     if (numeroMin === 0 || numeroMax === 0) {
@@ -32,6 +37,14 @@ function sortear() {
   } else {
     alert("Por favor, insira números positivos.");
   }
+}
+
+function reiniciarSorteio() {
+  numerosSorteados = [];
+  numerosPossiveis = [];
+
+  document.querySelector(".resultado-sorteio").innerHTML = "";
+  document.querySelector(".conteudo-historico").innerHTML = "";
 }
 
 function iniciarModal(modalID) {
