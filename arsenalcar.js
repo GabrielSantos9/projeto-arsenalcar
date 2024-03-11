@@ -1,8 +1,13 @@
 let numerosSorteados = [];
 
 function sortear() {
+  document.querySelector("#numero-min").disabled = true;
+  document.querySelector("#numero-max").disabled = true;
+  document.querySelector("#qtd-numeros").disabled = true;
+
   const numeroMin = Number(document.querySelector("#numero-min").value);
   const numeroMax = Number(document.querySelector("#numero-max").value);
+  const qtdNumeros = Number(document.querySelector("#qtd-numeros").value);
 
   if (numeroMin < 0 || numeroMax < 0) {
     alert("Por favor, insira números positivos.");
