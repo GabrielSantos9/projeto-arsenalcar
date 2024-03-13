@@ -1,0 +1,75 @@
+@media (min-width: 1900px) {
+  .area-sorteio {
+    position: fixed;
+  }
+
+  .historico {
+    margin-top: 800px;
+  }
+}
+
+@media (max-width: 655px) {
+  .conteudo {
+    width: 28.75rem;
+  }
+
+  .barra-preenchimento,
+  .button {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .conteudo {
+    width: 19.375rem;
+  }
+
+  .info-sorteio > .titulo {
+    font-size: 20px;
+  }
+
+  .info-sorteio > .subtitulo {
+    font-size: 19px;
+  }
+
+  .barra-preenchimento,
+  .button {
+    width: 15rem;
+  }
+
+  .modal-sorteio > .fechar {
+    position: absolute;
+    top: 430px;
+  }
+
+  .area-sorteio > .conteudo-sorteio {
+    width: 20rem;
+  }
+}
+
+@media (max-height: 641px) {
+  .historico {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .conteudo {
+    width: 17.5rem;
+    padding: 30px 10px;
+  }
+
+  .area-sorteio > .conteudo-sorteio {
+    width: 14.375rem;
+    height: 18.75rem;
+  }
+
+  .conteudo-sorteio > .resultado-sorteio {
+    font-size: 7rem;
+  }
+
+  .numero-sorteado {
+    margin-top: 280px;
+    font-size: 0.75rem;
+  }
+}

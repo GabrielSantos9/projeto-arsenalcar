@@ -41,9 +41,9 @@ function sortear() {
     document.querySelector("#qtd-numeros").disabled = false;
     alert("Por favor, preencha os campos do sorteio.");
   }
-  
+
   if (numeroMin === "" || numeroMax === "") {
-    alert("Por favor, preencha os campos vázios!")
+    alert("Por favor, preencha os campos vázios!");
   }
 
   let numeroSorteado;
@@ -60,18 +60,6 @@ function sortear() {
   const elementResultado = document.createElement("div");
   elementResultado.classList.add("resultado-valor");
   elementResultado.innerText = numeroSorteado;
-
-  function criarCirculos() {
-    const qtdNumeros = Number(document.querySelector("#qtd-numeros").value);
-    const circulosContainer = document.getElementById("circulos-container");
-    circulosContainer.innerHTML = ''; // Limpa o conteúdo atual
-
-    for (let i = 0; i < qtdNumeros; i++) {
-      const circulo = document.createElement("div");
-      circulo.classList.add("circulo");
-      circulosContainer.appendChild(circulo);
-    }
-  }
 
   const elementResultadoValores = document.querySelector(".conteudo-historico");
   elementResultadoValores.appendChild(elementResultado);
