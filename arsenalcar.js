@@ -3,47 +3,44 @@ let numerosSorteados = [];
 function sortear() {
   document.querySelector("#numero-min").disabled = true;
   document.querySelector("#numero-max").disabled = true;
-  document.querySelector("#qtd-numeros").disabled = true;
 
   const numeroMin = Number(document.querySelector("#numero-min").value);
   const numeroMax = Number(document.querySelector("#numero-max").value);
-  const qtdNumeros = Number(document.querySelector("#qtd-numeros").value);
 
   if (numeroMin < 0 || numeroMax < 0) {
-    document.querySelector("#numero-min").disabled = false;
-    document.querySelector("#numero-max").disabled = false;
-    document.querySelector("#qtd-numeros").disabled = false;
-    alert("Por favor, insira números positivos.");
+    enableCampos();
+    Swal.fire({
+      title: "Erro!",
+      text: "Por favor, insira números positivos.",
+      icon: "error",
+    });
+    return;
+  }
+
+  if (numeroMin === 0 || (numeroMax === 0 && numeroMin === "") || numeroMax === "" ) {
+    enableCampos();
+    Swal.fire({
+      title: "Erro!",
+      text: "Por favor, preencha os campos do sorteio com números positivos e o número máximo deve ser maior que o número mínimo!",
+      icon: "error",
+    });
     return;
   }
 
   if (numeroMax <= numeroMin) {
-    document.querySelector("#numero-min").disabled = false;
-    document.querySelector("#numero-max").disabled = false;
-    document.querySelector("#qtd-numeros").disabled = false;
+    enableCampos();
     alert("O número máximo deve ser maior que o número mínimo.");
     return;
   }
 
   if (numerosSorteados.length === numeroMax - numeroMin + 1) {
-    document.querySelector("#numero-min").disabled = false;
-    document.querySelector("#numero-max").disabled = false;
-    document.querySelector("#qtd-numeros").disabled = false;
-    alert(
-      "Todos os números possíveis foram sorteados. Caso queira sortear novamente, por favor, reinicie o sorteio (F5)!"
-    );
+    enableCampos();
+    Swal.fire({
+      title: "Calma calabreso!",
+      text: "Todos os números possíveis foram sorteados. Caso queira sortear novamente, por favor, reinicie o sorteio (F5)!",
+      icon: "warning",
+    });
     return;
-  }
-
-  if (numeroMin == 0 || numeroMax == 0) {
-    document.querySelector("#numero-min").disabled = false;
-    document.querySelector("#numero-max").disabled = false;
-    document.querySelector("#qtd-numeros").disabled = false;
-    alert("Por favor, preencha os campos do sorteio.");
-  }
-
-  if (numeroMin === "" || numeroMax === "") {
-    alert("Por favor, preencha os campos vázios!");
   }
 
   let numeroSorteado;
@@ -63,6 +60,11 @@ function sortear() {
 
   const elementResultadoValores = document.querySelector(".conteudo-historico");
   elementResultadoValores.appendChild(elementResultado);
+
+  function enableCampos() {
+    document.querySelector("#numero-min").disabled = false;
+    document.querySelector("#numero-max").disabled = false;
+  }
 }
 
 function iniciarModal(modalID) {
