@@ -27,7 +27,7 @@ function sortear() {
 
   if (numerosSorteados.length === numeroMax - numeroMin + 1) {
     enableCampos();
-    valNumerosSorteados()
+    valNumerosSorteados();
     return;
   }
 
