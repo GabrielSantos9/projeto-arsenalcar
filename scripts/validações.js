@@ -20,7 +20,7 @@ function valNumerosSorteados() {
     text: "Todos os números possíveis foram sorteados. Caso queira sortear novamente, por favor, reinicie o sorteio!",
     icon: "warning",
     footer:
-      '<a href="http://127.0.0.1:5500/projeto-arsenalcar/">Reiniciar o sorteio</a>',
+      '<a href="https://gabrielsantos9.github.io/projeto-arsenalcar/">Reiniciar o sorteio</a>',
   });
 }
 
