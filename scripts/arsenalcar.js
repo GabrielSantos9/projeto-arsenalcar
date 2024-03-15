@@ -9,37 +9,25 @@ function sortear() {
 
   if (numeroMin < 0 || numeroMax < 0) {
     enableCampos();
-    Swal.fire({
-      title: "Erro!",
-      text: "Por favor, insira números positivos.",
-      icon: "error",
-    });
+    valNumerosPositivos();
     return;
   }
 
   if (numeroMin === 0 || (numeroMax === 0 && numeroMin === "") || numeroMax === "" ) {
     enableCampos();
-    Swal.fire({
-      title: "Erro!",
-      text: "Por favor, preencha os campos do sorteio com números positivos e o número máximo deve ser maior que o número mínimo!",
-      icon: "error",
-    });
+    valCampoInvalido();
     return;
   }
 
   if (numeroMax <= numeroMin) {
     enableCampos();
-    alert("O número máximo deve ser maior que o número mínimo.");
+    valMineMax();
     return;
   }
 
   if (numerosSorteados.length === numeroMax - numeroMin + 1) {
     enableCampos();
-    Swal.fire({
-      title: "Calma calabreso!",
-      text: "Todos os números possíveis foram sorteados. Caso queira sortear novamente, por favor, reinicie o sorteio (F5)!",
-      icon: "warning",
-    });
+    valNumerosSorteados()
     return;
   }
 
