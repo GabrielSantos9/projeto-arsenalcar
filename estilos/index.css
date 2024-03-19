@@ -134,6 +134,10 @@ button-sorteio-1 {
   position: absolute;
 }
 
+.suspense-number {
+  animation: animacaoNumbers 3s ease-in-out;
+}
+
 .numero-sorteado {
   display: flex;
   font-size: 1.125rem;

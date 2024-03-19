@@ -31,3 +31,8 @@ function valMineMax() {
     icon: "error",
   });
 }
+
+function enableCampos() {
+  document.querySelector("#numero-min").disabled = false;
+  document.querySelector("#numero-max").disabled = false;
+}

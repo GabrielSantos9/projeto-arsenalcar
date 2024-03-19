@@ -9,6 +9,15 @@
   }
 }
 
+@keyframes animacaoNumbers {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .barra-preenchimento:focus {
   outline: 0;
   transition: 0.5s;
@@ -17,6 +26,7 @@
   background: transparent;
 }
 
-.button:hover, .button-sorteio:hover {
+.button:hover,
+.button-sorteio:hover {
   transform: scale(1.05);
 }

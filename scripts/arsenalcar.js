@@ -40,19 +40,21 @@ function sortear() {
 
   numerosSorteados.push(numeroSorteado);
 
-  document.querySelector(".resultado-sorteio").innerHTML = numeroSorteado;
+  const resultadoSorteio = document.querySelector(".resultado-sorteio");
+  resultadoSorteio.innerHTML = numeroSorteado;
+  resultadoSorteio.classList.add("suspense-number");
 
+  const historicoSorteio = document.querySelector(".conteudo-historico");
   const elementResultado = document.createElement("div");
-  elementResultado.classList.add("resultado-valor");
+  elementResultado.classList.add("resultado-valor", "suspense-number");
   elementResultado.innerText = numeroSorteado;
+  historicoSorteio.appendChild(elementResultado);
 
-  const elementResultadoValores = document.querySelector(".conteudo-historico");
-  elementResultadoValores.appendChild(elementResultado);
 
-  function enableCampos() {
-    document.querySelector("#numero-min").disabled = false;
-    document.querySelector("#numero-max").disabled = false;
-  }
+  setTimeout(() => {
+    resultadoSorteio.classList.remove("suspense-number");
+    elementResultado.classList.remove("suspense-number"); // Remova a classe suspense-number após a animação
+  }, 1000);
 }
 
 function iniciarModal(modalID) {
