@@ -13,7 +13,11 @@ function sortear() {
     return;
   }
 
-  if (numeroMin === 0 || (numeroMax === 0 && numeroMin === "") || numeroMax === "" ) {
+  if (
+    numeroMin === 0 ||
+    (numeroMax === 0 && numeroMin === "") ||
+    numeroMax === ""
+  ) {
     enableCampos();
     valCampoInvalido();
     return;
@@ -50,7 +54,6 @@ function sortear() {
   elementResultado.innerText = numeroSorteado;
   historicoSorteio.appendChild(elementResultado);
 
-
   setTimeout(() => {
     resultadoSorteio.classList.remove("suspense-number");
     elementResultado.classList.remove("suspense-number"); // Remova a classe suspense-number após a animação
@@ -62,6 +65,12 @@ function iniciarModal(modalID) {
   modal.classList.add("mostrar");
   modal.addEventListener("click", (e) => {
     if (e.target.className == "fechar") {
+      modal.classList.remove("mostrar");
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
       modal.classList.remove("mostrar");
     }
   });

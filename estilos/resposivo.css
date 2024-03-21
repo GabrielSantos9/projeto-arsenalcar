@@ -72,9 +72,7 @@
     margin-top: 280px;
     font-size: 0.75rem;
   }
-}
 
-@media (max-width: 420px) {
   .fechar {
     top: 330px;
   }
