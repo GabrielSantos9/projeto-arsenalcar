@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
   .conteudo {
     width: 17.5rem;
     padding: 30px 10px;
@@ -72,8 +72,12 @@
     margin-top: 280px;
     font-size: 0.75rem;
   }
+}
 
+@media (max-width: 355px) {
   .fechar {
-    top: 420px;
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    position: relative;
   }
 }
