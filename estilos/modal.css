@@ -40,34 +40,34 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 360px;
+  margin-top: 22.5rem;
   position: relative;
   z-index: 1;
 }
 
 .historico {
   display: flex;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   justify-content: center;
   flex-direction: column;
 }
 
 ::-webkit-scrollbar {
   background-color: var(--fundoScrollbar);
-  width: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  width: 0.313rem;
+  border-top-right-radius: 0.313rem;
+  border-bottom-right-radius: 0.313rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--barraScrollbar);
-  border-radius: 5px;
+  border-radius: 0.313rem;
 }
 
 .tituloHistorico {
   color: var(--corLeitura);
   display: flex;
-  padding: 20px;
+  padding: 1.25rem;
   justify-content: center;
   font-size: 1.25rem;
 }
@@ -82,9 +82,9 @@
 
 .conteudo-historico > .resultado-valor {
   display: flex;
-  width: 50px;
-  height: 50px;
-  margin: 5px;
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 0.313rem;
   border-radius: 50%;
   background-color: var(--barraPreenchimento);
   color: var(--corLeitura);
@@ -109,11 +109,11 @@
 
 .fechar {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   background-color: var(--filtroModal);
-  right: 10px;
-  top: 5px;
+  right: 0.625rem;
+  top: 0.313rem;
   cursor: pointer;
   background-image: url("/projeto-arsenalcar/img/close-circle-svgrepo-com\ 1.png");
 }
@@ -131,7 +131,7 @@
 }
 
 .button-sorteio {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   color: var(--corLeitura);
   font-weight: 600;
   width: 8rem;

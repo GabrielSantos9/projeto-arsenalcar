@@ -10,12 +10,12 @@
 .conteudo {
   border-radius: 0.9375rem;
   background: var(--fundoConteudo);
-  padding: 50px 0px;
+  padding: 3.125rem 0rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  width: 628px;
+  width: 39.25rem;
   transition: 0.15s ease-in-out;
 }
 
@@ -47,7 +47,7 @@
   display: flex;
   text-align: center;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .info-sorteio > .interacao > .numero-minimo > .minimo,
@@ -55,7 +55,7 @@
   color: var(--corLeitura);
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   letter-spacing: 0.01rem;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .button {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   color: var(--corLeitura);
   font-weight: 600;
   width: 33rem;
