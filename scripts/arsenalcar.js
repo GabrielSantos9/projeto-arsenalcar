@@ -56,7 +56,7 @@ function sortear() {
 
   setTimeout(() => {
     resultadoSorteio.classList.remove("suspense-number");
-    elementResultado.classList.remove("suspense-number"); // Remova a classe suspense-number após a animação
+    elementResultado.classList.remove("suspense-number"); 
   }, 1000);
 }
 
