@@ -17,6 +17,7 @@
   justify-content: center;
   width: 39.25rem;
   transition: 0.15s ease-in-out;
+  animation: telaInicial 0.9s;
 }
 
 .info-sorteio {
