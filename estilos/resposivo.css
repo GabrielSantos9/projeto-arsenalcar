@@ -81,3 +81,59 @@
     position: relative;
   }
 }
+
+@media (min-width: 2049px) {
+  .fechar {
+    display: flex;
+    right: -810px;
+    top: -210px;
+  }
+
+  .area-sorteio > .conteudo-sorteio {
+    width: 26rem;
+    height: 28rem;
+  }
+
+  .numero-sorteado {
+    margin-top: 25.5rem;
+  }
+}
+
+.button-sorteio {
+  width: 9rem;
+  font-size: 1.25rem;
+}
+
+.conteudo-historico > .resultado-valor {
+  width: 4.125rem;
+  height: 4.125rem;
+  font-size: 20px;
+}
+
+.resultado-sorteio {
+  font-size: 9rem;
+}
+
+@media (min-height: 1152px) {
+  .fechar {
+    top: -310px;
+  }
+}
+
+@media (min-height: 1282px) {
+  .fechar {
+    top: -370px;
+  }
+}
+
+@media (min-width: 2732px) {
+  .fechar {
+    right: -1150px;
+  }
+}
+
+@media (min-height: 1536px) {
+  .fechar {
+    top: -495px;
+  }
+}

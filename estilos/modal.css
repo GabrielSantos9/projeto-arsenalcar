@@ -115,6 +115,8 @@
   right: 0.625rem;
   top: 0.313rem;
   cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url("/projeto-arsenalcar/img/close-circle-svgrepo-com\ 1.png");
 }
 
