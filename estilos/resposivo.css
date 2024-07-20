@@ -1,21 +1,29 @@
-@media (min-width: 1900px) {
-  .area-sorteio {
-    position: fixed;
-  }
-
-  .historico {
-    margin-top: 50rem;
+@media (max-width: 355px) {
+  .fechar {
+    display: flex;
+    margin: 0.625rem 0rem 0.625rem 0rem;
+    position: relative;
   }
 }
 
-@media (max-width: 655px) {
+@media (max-width: 440px) {
   .conteudo {
-    width: 28.75rem;
+    width: 17.5rem;
+    padding: 1.875rem 0.625rem;
   }
 
-  .barra-preenchimento,
-  .button {
-    width: 22rem;
+  .area-sorteio > .conteudo-sorteio {
+    width: 14.375rem;
+    height: 18.75rem;
+  }
+
+  .conteudo-sorteio > .resultado-sorteio {
+    font-size: 7rem;
+  }
+
+  .numero-sorteado {
+    margin-top: 17.5rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -53,31 +61,23 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 655px) {
   .conteudo {
-    width: 17.5rem;
-    padding: 1.875rem 0.625rem;
+    width: 28.75rem;
   }
 
-  .area-sorteio > .conteudo-sorteio {
-    width: 14.375rem;
-    height: 18.75rem;
-  }
-
-  .conteudo-sorteio > .resultado-sorteio {
-    font-size: 7rem;
-  }
-
-  .numero-sorteado {
-    margin-top: 17.5rem;
-    font-size: 0.75rem;
+  .barra-preenchimento,
+  .button {
+    width: 22rem;
   }
 }
 
-@media (max-width: 355px) {
-  .fechar {
-    display: flex;
-    margin: 0.625rem 0rem 0.625rem 0rem;
-    position: relative;
+@media (min-width: 1900px) {
+  .area-sorteio {
+    position: fixed;
+  }
+
+  .historico {
+    margin-top: 50rem;
   }
 }
