@@ -1,9 +1,15 @@
+@media (max-width: 320px) {
+  .conteudo {
+      width: 17.375rem;
+  }
+
 @media (max-width: 355px) {
   .fechar {
     display: flex;
-    margin: 0.625rem 0rem 0.625rem 0rem;
-    position: relative;
+    width: 2.125rem;
+    height: 2.125rem;
   }
+}
 }
 
 @media (max-width: 440px) {
@@ -27,33 +33,6 @@
   }
 }
 
-@media (max-width: 500px) {
-  .conteudo {
-    width: 19.375rem;
-  }
-
-  .info-sorteio > .titulo {
-    font-size: 1.25rem;
-  }
-
-  .info-sorteio > .subtitulo {
-    font-size: 1.188rem;
-  }
-
-  .barra-preenchimento,
-  .button {
-    width: 15rem;
-  }
-
-  .modal-sorteio > .fechar {
-    position: absolute;
-    top: 26.875rem;
-  }
-
-  .area-sorteio > .conteudo-sorteio {
-    width: 20rem;
-  }
-}
 
 @media (max-height: 641px) {
   .historico {
@@ -63,13 +42,20 @@
 
 @media (max-width: 655px) {
   .conteudo {
-    width: 28.75rem;
-  }
+    width: 19.375rem;
+}
 
-  .barra-preenchimento,
-  .button {
-    width: 22rem;
-  }
+  .barra-preenchimento, .button {
+    width: 15rem;
+}
+
+.info-sorteio > .titulo {
+  font-size: 1.35rem;
+}
+
+.info-sorteio > .subtitulo {
+  font-size: 1.38rem;
+}
 }
 
 @media (min-width: 1900px) {

@@ -86,3 +86,12 @@
   cursor: pointer;
   transition: 0.15s ease-in-out;
 }
+
+.link-interativo {
+  color: rgb(255 255 255 / 57%);
+    display: flex;
+    text-decoration: underline;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
