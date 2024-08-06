@@ -27,7 +27,11 @@
               <label class="maximo">Número máximo:</label>
               <input class="barra-preenchimento" type="number" value="100" id="numero-max" />
             </div>
-              <input class="button" type="button" value="INICIAR"/>
+              <div class="quantidade-circulos">
+                <label class="quantidade" for="quantidade">Quantidade de Círculo(s):</label>
+                <input class="barra-preenchimento" type="number" id="quantidade" value="20">
+              </div>
+              <input class="button-modal" type="button" value="INICIAR"/>
               <a class="link-interativo" href="https://gabrielsantos9.github.io/projeto-arsenalcar/">Reiniciar sorteio</a>
           </div>
         </div>      
@@ -46,7 +50,7 @@
           <div class="historico" id="historicoTeste">
             <h1 class="tituloHistorico">Últimos números:</h1> 
           </div>
-          <div class="conteudo-historico">
+          <div class="conteudo-historico" id="conteudo-historico">
         </main>
     <script src="scripts/arsenalcar.js"></script>
     <script src="scripts/validações.js"></script>

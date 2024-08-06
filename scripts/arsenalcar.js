@@ -1,8 +1,13 @@
 let numerosSorteados = [];
+let indiceAtual = 0;
+let circulosAdicionados = false;
 
 function sortear() {
   document.querySelector("#numero-min").disabled = true;
   document.querySelector("#numero-max").disabled = true;
+  document.querySelector("#quantidade").disabled = true;
+  const circlesContainer = document.getElementById("conteudo-historico");
+  const circles = circlesContainer.children;
 
   const numeroMin = Number(document.querySelector("#numero-min").value);
   const numeroMax = Number(document.querySelector("#numero-max").value);
@@ -35,6 +40,12 @@ function sortear() {
     return;
   }
 
+  if (indiceAtual >= circles.length) {
+    enableCampos();
+    valNumerosSorteados();
+    return;
+  }
+
   let numeroSorteado;
 
   do {
@@ -42,25 +53,26 @@ function sortear() {
       Math.floor(Math.random() * (numeroMax - numeroMin + 1)) + numeroMin;
   } while (numerosSorteados.includes(numeroSorteado));
 
+  circles[indiceAtual].textContent = numeroSorteado;
+  indiceAtual++;
+
   numerosSorteados.push(numeroSorteado);
 
   const resultadoSorteio = document.querySelector(".resultado-sorteio");
   resultadoSorteio.innerHTML = numeroSorteado;
   resultadoSorteio.classList.add("suspense-number");
 
-  const historicoSorteio = document.querySelector(".conteudo-historico");
-  const elementResultado = document.createElement("div");
-  elementResultado.classList.add("resultado-valor", "suspense-number");
-  elementResultado.innerText = numeroSorteado;
-  historicoSorteio.appendChild(elementResultado);
-
   setTimeout(() => {
     resultadoSorteio.classList.remove("suspense-number");
-    elementResultado.classList.remove("suspense-number"); 
   }, 1000);
 }
 
 function iniciarModal(modalID) {
+  if (!circulosAdicionados) {
+    adicionarCirculos();
+    circulosAdicionados = true;
+  }
+
   const modal = document.getElementById(modalID);
   modal.classList.add("mostrar");
   modal.addEventListener("click", (e) => {
@@ -69,12 +81,28 @@ function iniciarModal(modalID) {
     }
   });
 
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
       modal.classList.remove("mostrar");
     }
   });
-}
 
-const button = document.querySelector(".button");
+ function adicionarCirculos() {
+    const quantidade = parseInt(document.getElementById("quantidade").value);
+    const conteudoHistorico = document.getElementById("conteudo-historico");
+    conteudoHistorico.innerHTML = ""; 
+
+    for (let i = 0; i < quantidade; i++) {
+      const elementResultado = document.createElement("div");
+      (elementResultado.className = "resultado-valor"), "suspense-number";
+      conteudoHistorico.appendChild(elementResultado);
+    }
+
+    document.querySelector("#numero-min").disabled = false;
+    document.querySelector("#numero-max").disabled = false;
+    document.querySelector("#quantidade").disabled = false;
+  }
+} 
+
+const button = document.querySelector(".button-modal");
 button.addEventListener("click", () => iniciarModal("modal-sorteio"));

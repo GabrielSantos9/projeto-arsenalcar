@@ -44,15 +44,20 @@
 }
 
 .info-sorteio > .interacao > .numero-minimo,
-.numero-maximo {
+.numero-maximo, .quantidade-circulos {
   display: flex;
   text-align: center;
   flex-direction: column;
   margin-top: 1.875rem;
 }
 
-.info-sorteio > .interacao > .numero-minimo > .minimo,
-.maximo {
+.info-sorteio > .interacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.minimo,
+.maximo, .quantidade {
   color: var(--corLeitura);
   font-size: 1rem;
   font-weight: 600;
@@ -72,7 +77,7 @@
   width: 33rem;
 }
 
-.button {
+.button-modal {
   margin-top: 1.875rem;
   color: var(--corLeitura);
   font-weight: 600;

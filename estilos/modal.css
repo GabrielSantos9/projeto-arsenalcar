@@ -146,3 +146,16 @@
   cursor: pointer;
   transition: 0.15s ease-in-out;
 }
+
+.circle {
+  display: flex;
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 0.313rem;
+  border-radius: 50%;
+  background-color: var(--barraPreenchimento);
+  color: var(--corLeitura);
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}

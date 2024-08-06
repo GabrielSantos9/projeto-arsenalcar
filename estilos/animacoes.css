@@ -37,7 +37,7 @@
   background: transparent;
 }
 
-.button:hover,
+.button-modal:hover,
 .button-sorteio:hover {
   transform: scale(1.05);
 }
