@@ -44,7 +44,7 @@
 }
 
 .info-sorteio > .interacao > .numero-minimo,
-.numero-maximo, .quantidade-circulos {
+.numero-maximo, .quantidade-numeros {
   display: flex;
   text-align: center;
   flex-direction: column;

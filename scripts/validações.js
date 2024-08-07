@@ -17,7 +17,7 @@ function valCampoInvalido() {
 function valNumerosSorteados() {
   Swal.fire({
     title: "Atenção!",
-    text: "Todos os números círculos foram preenchidos. Caso queira sortear novamente, por favor, reinicie o sorteio!",
+    text: "Quantidade números excedida. Caso queira sortear novamente, por favor, reinicie o sorteio!",
     icon: "warning",
     footer:
       '<a href="https://gabrielsantos9.github.io/projeto-arsenalcar/">Reiniciar o sorteio</a>',
