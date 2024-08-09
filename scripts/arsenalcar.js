@@ -60,10 +60,10 @@ function sortear() {
 
   const resultadoSorteio = document.querySelector(".resultado-sorteio");
   resultadoSorteio.innerHTML = numeroSorteado;
-  resultadoSorteio.classList.add("suspense-number");
+  resultadoSorteio.classList.add("suspense-anime");
 
   setTimeout(() => {
-    resultadoSorteio.classList.remove("suspense-number");
+    resultadoSorteio.classList.remove("suspense-anime");
   }, 1000);
 }
 
@@ -94,7 +94,7 @@ function iniciarModal(modalID) {
 
     for (let i = 0; i < quantidade; i++) {
       const elementResultado = document.createElement("div");
-      (elementResultado.className = "resultado-valor"), "suspense-number";
+      (elementResultado.className = "resultado-valor");
       conteudoHistorico.appendChild(elementResultado);
     }
 

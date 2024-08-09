@@ -27,7 +27,7 @@
   position: absolute;
 }
 
-.suspense-number {
+.suspense-anime {
   animation: animacaoNumbers 3s ease-in-out;
 }
 
@@ -91,6 +91,7 @@
   font-weight: 600;
   align-items: center;
   justify-content: center;
+  animation: animacaoNumbers 3s ease-in-out;
 }
 
 .modal-container {
